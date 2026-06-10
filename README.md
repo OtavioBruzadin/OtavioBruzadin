@@ -1,3 +1,3 @@
 <div align="center">
-    <img src="terminal-profile.gif" width="100%">
+    <img src="terminal-profile-two-columns.gif" width="100%">
 </div>
