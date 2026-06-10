@@ -1,12 +1,12 @@
 <div align="center">
 
-  <img src="terminal-header.svg" alt="Terminal Profile" width="100%">
+  <img src="terminal-profile.svg" alt="Terminal Profile" width="100%">
 
   <br><br>
 
- <!--<img height="170" src="https://github-readme-stats.vercel.app/api?username=OtavioBruzadin&show_icons=true&theme=github_dark&hide_border=true&custom_title=System%20Metrics"> -->
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=github_dark&hide_border=true&custom_title=System%20Metrics">
 
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=OtavioBruzadin&layout=compact&theme=github_dark&hide_border=true&custom_title=Language%20Modules">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=github_dark&hide_border=true&custom_title=Language%20Modules">
 
   <br><br>
 
