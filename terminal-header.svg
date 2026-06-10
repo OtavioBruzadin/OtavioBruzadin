@@ -1,0 +1,74 @@
+<svg width="1000" height="420" viewBox="0 0 1000 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #050807; }
+    .border { stroke: #00ff99; stroke-width: 2; opacity: 0.85; }
+    .scan { fill: url(#scanlines); opacity: 0.16; }
+    .title { font-family: 'Fira Code', 'Consolas', monospace; font-size: 18px; fill: #00ff99; }
+    .text { font-family: 'Fira Code', 'Consolas', monospace; font-size: 20px; fill: #00ff99; }
+    .muted { fill: #8cffc7; opacity: 0.8; }
+    .cursor { fill: #00ff99; animation: blink 1s step-end infinite; }
+    @keyframes blink {
+      0%, 45% { opacity: 1; }
+      46%, 100% { opacity: 0; }
+    }
+    .line { opacity: 0; animation-fill-mode: forwards; animation-timing-function: steps(1, end); }
+    .l1 { animation: show 0.1s 0.2s forwards; }
+    .l2 { animation: show 0.1s 0.9s forwards; }
+    .l3 { animation: show 0.1s 1.6s forwards; }
+    .l4 { animation: show 0.1s 2.3s forwards; }
+    .l5 { animation: show 0.1s 3.0s forwards; }
+    .l6 { animation: show 0.1s 3.7s forwards; }
+    .l7 { animation: show 0.1s 4.4s forwards; }
+    .l8 { animation: show 0.1s 5.1s forwards; }
+    .l9 { animation: show 0.1s 5.8s forwards; }
+    .l10 { animation: show 0.1s 6.5s forwards; }
+    @keyframes show {
+      to { opacity: 1; }
+    }
+    .bar-fill {
+      transform-origin: left center;
+      transform: scaleX(0);
+      animation: loadbar 3.6s 0.6s forwards ease-out;
+    }
+    @keyframes loadbar {
+      to { transform: scaleX(1); }
+    }
+  </style>
+
+  <defs>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#00ff99"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1000" height="420" rx="18"/>
+  <rect class="border" x="18" y="18" width="964" height="384" rx="14"/>
+  <rect class="scan" x="18" y="18" width="964" height="384" rx="14"/>
+
+  <text class="title" x="42" y="52" filter="url(#glow)">OTAVIO_AUGUSTO_BRUZADIN :: DEV_TERMINAL</text>
+  <text class="title muted" x="760" y="52">STATUS: ONLINE</text>
+
+  <g filter="url(#glow)">
+    <text class="text line l1" x="54" y="105">$ boot developer-profile</text>
+    <text class="text line l2" x="54" y="140">Initializing Otavio Augusto Bruzadin...</text>
+    <text class="text line l3" x="54" y="175">Loading backend module.............. OK</text>
+    <text class="text line l4" x="54" y="210">Loading AI module................... OK</text>
+    <text class="text line l5" x="54" y="245">Loading research module............. OK</text>
+    <text class="text line l6" x="54" y="280">Loading distributed systems......... OK</text>
+    <text class="text line l7" x="54" y="315">System status: ONLINE</text>
+    <text class="text line l8" x="54" y="350">$ whoami</text>
+    <text class="text line l9" x="54" y="380">otavio_bruzadin</text>
+    <text class="text line l10" x="310" y="380">$</text>
+    <rect class="cursor line l10" x="326" y="362" width="12" height="22"/>
+  </g>
+
+  <rect x="54" y="82" width="892" height="8" rx="4" stroke="#00ff99" opacity="0.7"/>
+  <rect class="bar-fill" x="56" y="84" width="888" height="4" rx="2" fill="#00ff99" opacity="0.9"/>
+</svg>
